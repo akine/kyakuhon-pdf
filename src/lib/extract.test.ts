@@ -19,6 +19,16 @@ const atom = (
 });
 
 describe("reading order", () => {
+  it("preserves explicit screenplay indentation", () => {
+    expect(
+      extractPage(
+        [atom("　春、時計を見る。", 180, 40)],
+        300,
+        400,
+        defaultOptions,
+      ).text,
+    ).toBe("　春、時計を見る。");
+  });
   it("turns vertical presentation punctuation back into editable horizontal punctuation", () => {
     expect(
       extractPage(

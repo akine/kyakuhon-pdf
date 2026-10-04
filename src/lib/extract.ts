@@ -129,7 +129,7 @@ export function extractPage(
         line += (needsSpace ? " " : "") + horizontalPunctuation(atom.text);
         previous = atom;
       }
-      return line.trim();
+      return line.trimEnd();
     })
     .filter(Boolean);
   const text = options.joinWrappedLines ? joinLines(lines) : lines.join("\n");
