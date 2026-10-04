@@ -1,2 +1,13 @@
 input.pdf
 output.txt
+
+# Browser workspace
+node_modules/
+dist/
+test-results/
+playwright-report/
+tmp/
+.DS_Store
+public/pdfjs/
+
+.venv/
