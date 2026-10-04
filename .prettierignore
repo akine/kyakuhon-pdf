@@ -1,0 +1,6 @@
+dist
+node_modules
+public/pdfjs
+tmp
+test-results
+package-lock.json
